@@ -1,4 +1,4 @@
-{
+
      "arwinykkz",
     "NamelessMovesetTest",
     "Kurumi_Tokiisakiii",
@@ -14,4 +14,4 @@
     "m1resetestmobile",
     "jjkispeakfrfrr",
     "username",
-}
+
