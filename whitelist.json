@@ -1,9 +1,7 @@
-game.Players.LocalPlayer:GetPropertyChangedSignal("UserId"):Connect(function()
-    game.Players.LocalPlayer:Kick("")
-end)
 
-local whitelistedNames = {
-    "arwinykkz",
+{
+    "whitelistedNames": [
+     "arwinykkz",
     "NamelessMovesetTest",
     "Kurumi_Tokiisakiii",
     "project_Antiheker",
@@ -18,22 +16,5 @@ local whitelistedNames = {
     "m1resetestmobile",
     "jjkispeakfrfrr",
     "username",
+    ]
 }
-
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
-local isWhitelisted = false
-for _, name in ipairs(whitelistedNames) do
-    if player.Name == name then
-        isWhitelisted = true
-        break
-    end
-end
-
-if isWhitelisted then
-    print("XQZ early access")
-else
-    player:Kick("You don't have access to this Moveset, if this was mistaken, please contact the Owner.")
-    Setclipboard("XQZ is my daddy, i edge to him 24/7 but sometimes i instantly came 30 times ðŸ¥µ")
-end
